@@ -29,13 +29,13 @@ def create_ics_file(title, description, start_datetime, end_datetime, location):
 st.title("Generador de ficheros ICS")
 
 # Input fields
-title = st.text_input("Event Title", "Mago pintuchiando")
-description = st.text_area("Event Description", "lorem")
-location = st.text_input("Event Location", "zamora")
-start_date = st.date_input("Start Date")
-start_time = st.time_input("Start Time")
-end_date = st.date_input("End Date")
-end_time = st.time_input("End Time")
+title = st.text_input("Título del Evento", "Mago pintuchiando")
+description = st.text_area("Descripción del Evento", "Información del Evento")
+location = st.text_input("Event Location", "Zamora")
+start_date = st.date_input("Fecha de Inicio")
+start_time = st.time_input("Hora de Inicio")
+end_date = st.date_input("Fecha de Fin")
+end_time = st.time_input("Hora de Fin")
 
 if st.button("Generar archivo ICS"):
     # Combine date and time
