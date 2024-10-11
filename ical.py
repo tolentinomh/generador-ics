@@ -31,7 +31,7 @@ st.title("Generador de ficheros ICS")
 # Input fields
 title = st.text_input("Título del Evento", "Mago pintuchiando")
 description = st.text_area("Descripción del Evento", "Información del Evento")
-location = st.text_input("Event Location", "Zamora")
+location = st.text_input("Localización del Evento", "Zamora")
 start_date = st.date_input("Fecha de Inicio")
 start_time = st.time_input("Hora de Inicio")
 end_date = st.date_input("Fecha de Fin")
