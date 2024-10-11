@@ -37,7 +37,7 @@ start_time = st.time_input("Start Time")
 end_date = st.date_input("End Date")
 end_time = st.time_input("End Time")
 
-if st.button("Generate ICS File"):
+if st.button("Generar archivo ICS"):
     # Combine date and time
     start_datetime = datetime.combine(start_date, start_time, tzinfo=ZoneInfo("Europe/Berlin"))
     end_datetime = datetime.combine(end_date, end_time, tzinfo=ZoneInfo("Europe/Berlin"))
@@ -47,10 +47,10 @@ if st.button("Generate ICS File"):
 
     # Create a download button
     st.download_button(
-        label="Download ICS File",
+        label="Descargar Archivo ICS",
         data=ics_content,
         file_name="event.ics",
         mime="text/calendar"
     )
 
-st.info("After generating the ICS file, click the 'Download ICS File' button to save it.")
+st.info("Despues de generar el archivo ICS, haz clic en 'Descargar archivo ICS' para guardarlo.")
